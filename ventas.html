@@ -21,23 +21,23 @@
 <body style="background-image: url(IMG/ba2.jpg);>
    
   <div class="container" id="comprar">
-    <div class="fs-3 text-center my-3" id="titulo">Comprar entradas</div>
+    <div class="fs-3 text-center my-3 text-white" id="titulo">Comprar entradas</div>
     <form action="#" method="post">
       <div class="row mx-5">
         <div class="col-md mb-3">
-          <input type="text" name="nombre" id="nombre" class="form-control text-center" required placeholder="Nombre">
+          <input type="text" name="nombre" id="nombre" class="form-control text-center" required placeholder="Nombre"> <sup class="text-white">Ingrese su Nombre</sup>
         </div>
         <div class="col-md mb-3">
-          <input type="text" name="apellido" id="apellido" class="form-control text-center" required placeholder="Apellido">
+          <input type="text" name="apellido" id="apellido" class="form-control text-center" required placeholder="Apellido"> <sup class="text-white">Ingrese su Apellido</sup>
         </div>
       </div>
 
       <div class="row mx-5">
         <div class="col-md mb-3">
-            <input type="email" name="email" id="email" class="form-control" required placeholder="email">
+            <input type="email" name="email" id="email" class="form-control text-center" required placeholder="Email"><sup class="text-white">Ingrese su Email</sup>
         </div>
         <div class="col-md mb-3">
-            <input type="text" name="tel" id="tel" class="form-control" required placeholder="telefono móvil">
+            <input type="text" name="tel" id="tel" class="form-control text-center" required placeholder="Telefono móvil"><sup class="text-white">Ingrese su Nro de celular </sup>
         </div>
       </div>
 
@@ -47,11 +47,12 @@
           <sup class="text-white">Valor de entrada $1000</sup>
         </div>
         <div class="col-md mb-3">
-          <select class="form-select" id="porcDescuento" onchange="calcularPrecioTotal()" >
+          <select class="form-select" id="porcDescuento" onchange="calcularPrecioTotal()">
             <option value="10">Particular -- 10% descuento</option>
             <option value="30">Estudiante -- 30% descuento</option>
             <option value="50">Orador -- 50% descuento</option>
-          </select>          
+            
+          </select> <sup class="text-white ">Seleccione categoria de descuento </sup>         
         </div>
         <div class="col-md mb-3">
           <input type="text" name="precioFinal" id="precioFinal" class="form-control" disabled placeholder="Precio de entradas con descuento"> <sup class="text-white">Precio con descuento</sup>
